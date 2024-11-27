@@ -8,6 +8,6 @@ WORKDIR /app
 
 COPY ./src/Gemfile ./src/Gemfile.lock ./
 
-RUN gem update --system && bundle install
+RUN gem clean && gem update --system && bundle install
 
 COPY ./src ./
