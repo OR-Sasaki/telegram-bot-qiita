@@ -25,3 +25,5 @@ module App
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
+Telegram::Bot::Client.typed_response!
